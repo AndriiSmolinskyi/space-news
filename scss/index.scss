@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import '_variab.scss';
+
+body{
+    font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 1275px;
+    margin: 0 auto;
+    padding: 20px 20px 0px 20px;
+}
+
+.first-bg{
+    background-image: url('../img/Sec1BG.png');
+    height: 1096px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 586px){
+        height: 100vh;
+        background-position: center;
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 23px 28px;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(30px);
+
+        .header__nav__list{
+            display: flex;
+            gap: 46px;
+            color: $white;
+
+            @media screen and (max-width: 960px){
+                gap: 30px;
+            }
+
+            @media screen and (max-width: 850px){
+                gap: 15px;
+            }
+
+            @media screen and (max-width: 768px){
+                display: none;
+            }
+
+            .header__nav__list__item:hover{
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
+    border-radius: 6px; 
+}
+  
+::-webkit-scrollbar-track {
+    background: #4b4848; 
+}
+
+.big__subtitle{
+    color: $white;
+    font-family: Open Sans;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 6.4px;
+    line-height: normal;
+
+    @media screen and (max-width: 586px){
+        font-size: 48px;
+    }
+}
+
+.big__title{
+    color: $white;
+    font-size: 92px;
+    font-weight: 700;
+
+    @media screen and (max-width: 768px){
+        font-size: 80px;
+    }
+
+    @media screen and (max-width: 586px){
+        font-size: 64px;
+    }
+}
+
+.big__link{
+    color: $white;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-decoration-line: underline;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.big__btn{
+    background-color: transparent;
+    border: none;
+    width: 290px;
+    height: 77px;
+    border: 4px solid $white;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    color: $white;
+    cursor: pointer;
+}
+
+.big__btn:hover{
+    opacity: 0.8;
+}
+
+
+.header__article{
+    padding-top: 215px;
+
+    @media screen and (max-width: 586px){
+        padding-top: 100px;
+    }
+}
+
+.burger{
+    font-size: 20px;
+    color: $white;
+    display: none;
+
+    @media screen and (max-width: 768px){
+        display: inline-block;
+    }
+}
+
+.sec-bg{
+    background-image: url('../img/Sec2BG.png');
+    height: 811px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 586px){
+        height: 100vh;
+        background-image: url('../img/Sec2mobile.png');     
+    }
+
+    .sec{
+        padding-top: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 586px){
+            padding-top: 150px;   
+        }
+    }
+}
+
+.third-bg{
+    background-color: black;
+    padding: 120px;
+
+    @media screen and (max-width: 1140px){
+        padding: 0px;
+        background-color: none;
+    }
+}
+
+.third{
+    background-image: url('../img/Sec3BG.png');
+    height: 794px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 135px;
+
+    @media screen and (max-width: 890px){
+        padding-right: 0px;
+    }
+
+    @media screen and (max-width: 586px){
+        background-position: top;
+        height: 1610px;
+        justify-content: end;
+        align-items: center;
+        background-image: url('../img/Sec3BG(1).png');
+    }
+
+    .third__item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 480px;
+        box-sizing: border-box;
+        background: rgba(25, 65, 106, 0.50);
+        backdrop-filter: blur(22px);
+        padding: 50px;
+
+        @media screen and (max-width: 586px){
+            max-width: 586px;
+            padding: 30px 10px 30px 10px;
+        }
+
+        .third__item__subtitle{
+            font-size: 58px;
+            @media screen and (max-width: 586px){
+                font-size: 44px;
+            }
+        }
+        .third__item__text{
+            color: $white;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px; /* 171.429% */
+            letter-spacing: 1.4px
+        }
+    }
+}
+
+.four-bg{
+    background-color: #F1F1F1;
+}
+
+.four{ 
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    @media screen and (max-width: 900px){
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .four__flex{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: 900px){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+        }
+
+        @media screen and (max-width: 586px){
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+    
+        
+        .four__flex__item{
+            max-width: 370px;
+            height: 635px;
+            background-color: $white;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 1;
+            
+            .img__block{
+                position: relative;
+                max-width: 370px;
+
+                .four__flex__item__img{
+                  width: 100%;
+                }
+
+                .four__date{
+                    position: absolute;
+                    z-index: 2;
+                    left: 0%;
+                    bottom: 0%;
+                    width: 178px;
+                    height: 46px;
+                    background-color: $white;
+                    text-align: center;
+                    padding: 15px;
+                    box-sizing: border-box;
+                }
+            }
+
+            .four__flex__item__title{
+                color: #000;
+                font-style: Open Sans;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 30px 38px 15px 38px;
+            }
+
+            .four__flex__item__text{
+                color: #313131;
+                font-family: Open Sans;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 1.4px;
+                line-height: 24px;
+                margin-right: 38px;
+                margin-left: 38px;
+                flex-grow: 1;
+            }
+        }  
+        
+        .four__flex__item:nth-child(4){
+            display: none;
+
+            @media screen and (max-width: 900px){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 370px;
+            }
+
+            @media screen and (max-width: 586px){
+                display: none;
+            }
+        }
+        
+        .four__flex__item {
+            flex-basis: 0; /* По замовчуванню - auto, змінюємо на 0 */
+            flex-grow: 1; /* За замовчуванням - 0, дозволяємо елементам займати доступний простір */
+            flex-shrink: 1;
+          }
+          
+        .four__flex__item:nth-child(2) {
+            flex-shrink: 2;
+
+            @media screen and (max-width: 900px){
+                flex-shrink: 1;
+            }
+        }
+    
+    }
+
+}
+
+.btn__block{
+    display: none;
+}
+
+.four__btn{
+    max-width: 300px;
+    height: 65px;
+    background-color: transparent;
+    border: none;
+    border: 4px solid #313131;
+    color: #313131;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.26px;
+}
+
+.four__btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.block__btn__down{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 900px){
+        display: none;
+    }
+
+    @media screen and (max-width: 586px){
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+.five-bg{
+    background-color: #000;
+}
+
+.five{
+    padding-bottom: 137px;
+
+    @media screen and (max-width: 800px){
+        padding-bottom: 127px;
+    }
+
+    @media screen and (max-width: 586px){
+        padding-bottom: 67px;
+    }
+    
+    .five__img{
+        width: 100%;
+    }
+
+    .five__subtitle{
+        margin-bottom: 39px;
+    }
+
+    .five__cont{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        
+        @media screen and (max-width: 800px){
+            gap: 55px;
+        }
+
+        .five__cont__item{
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            color: $white;
+
+            @media screen and (max-width: 586px){
+                gap: 15px;
+            }
+
+            .five__cont__title{
+                font-family: Open Sans;
+                font-size: 34px;
+                letter-spacing: 3.4px;
+            }
+
+            .five__cont__text{
+                font-family: Open Sans;
+                font-size: 14px;
+                line-height: 25px; 
+                letter-spacing: 1.4px;
+            }
+        }
+    }
+
+    
+}
+
+.footer{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1300px){
+        padding-top: 55px;
+        padding-bottom: 55px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 586px){
+        gap: 33px;
+    }
+
+    .footer__links{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 586px){
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .footer__links__item{
+            color: #000;
+            font-family: Open Sans Condensed;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    }
+}
+
+.footer-img{
+    width: 220px;
+}
